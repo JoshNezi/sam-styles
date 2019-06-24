@@ -11,6 +11,11 @@ SAM THEME CUSTOM STYLES
 ----------------------------------------
 */
 
+// Mixins
+@import '../mixins/box-shadow';
+@import '../mixins/breakpoints';
+@import '../mixins/transition';
+
 // Elements
 // -------------------------------------
 @import '../elements/buttons';
@@ -30,6 +35,7 @@ SAM THEME CUSTOM STYLES
 @import '../components/resultsList';
 @import '../components/menu';
 @import '../components/overlay';
+@import '../components/modal';
 
 // Layouts
 // -------------------------------------

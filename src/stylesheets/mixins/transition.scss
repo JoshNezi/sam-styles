@@ -7,15 +7,26 @@
 ========================================
 ========================================
 ----------------------------------------
-SAM THEME COMPONENT SETTINGS
+SAM THEME TRANSITION MIXINS
 ----------------------------------------
--
-Read more about settings and
-USWDS style tokens in the documentation:
-https://v2.designsystem.digital.gov/style-tokens
 -
 ----------------------------------------
 */
 
-// Import component specific variables
-@import './components/sds-theme-component-modal'
+// stylelint-disable property-blacklist
+@mixin transition($transition...) {
+  @if $enable-transitions {
+    @if length($transition) == 0 {
+      transition: $transition-base;
+    }
+    @else {
+      transition: $transition;
+    }
+  }
+
+  @if $enable-prefers-reduced-motion-media-query {
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+}
