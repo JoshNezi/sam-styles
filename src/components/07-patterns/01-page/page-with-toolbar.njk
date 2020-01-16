@@ -1,0 +1,287 @@
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+{% render '@banner' %} 
+
+{% render '@header--extended-sam' %}
+
+
+<div class="sds-navbar border-bottom border-base-lighter">
+  <div class="sds-navbar__content">
+    <div class="grid-row">
+      <div
+        class="grid-col-12 tablet-lg:grid-col-auto display-flex flex-align-center margin-bottom-1 tablet-lg:margin-bottom-0"
+      >
+        <!-- Back Button -->
+        <button class="sds-button sds-button--circular">
+          <i class="fas fa-fw fa-chevron-left"></i>
+        </button>
+
+        <!-- Page Title -->
+        <span class="font-heading-md text-semibold tablet-lg:width-mobile">
+          Title here
+        </span>
+      </div>
+      <div class="grid-col-12 tablet-lg:grid-col-fill display-flex">
+        <div class="tablet-lg:order-1">
+          <!-- Buttons -->
+          <button class="usa-button usa-button--secondary">Button</button>
+          <button class="usa-button margin-top-05 tablet:margin-top-0">
+            Button
+          </button>
+        </div>
+        <div class="flex-fill">
+          <!-- Search -->
+          <form
+            class="usa-search usa-search--small margin-x-105 margin-top-05 tablet:margin-top-0"
+          >
+            <div role="search">
+              <label class="usa-sr-only" for="search-field-small">Search</label>
+              <input
+                class="usa-input width-card-lg widescreen:width-mobile display-none desktop-lg:display-inline-block"
+                id="search-field-small"
+                type="search"
+                name="search"
+                placeholder="Entity an entity ID, name, or keyword"
+              />
+              <button class="usa-button" type="submit">
+                <span class="usa-sr-only">Search</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="tablet-lg:order-2 margin-left-2">
+          <!-- Actions Menu Trigger: Desktop-->
+          <span class="display-none desktop-lg:display-inline-block">
+            <button class="sds-button sds-button--labeled-icon">
+              Actions
+              <span class="fa-layers fa-fw">
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-ellipsis-v" data-fa-transform="shrink-6"></i>
+              </span>
+            </button>
+          </span>
+
+          <!-- Actions Menu Trigger: Tablet-->
+          <span class="desktop-lg:display-none ">
+            <span class="display-none tablet-lg:display-inline-block">
+              <button
+                class="sds-button sds-button--primary sds-button--circular"
+              >
+                <i class="fas fa-fw fa-ellipsis-v"></i>
+              </button>
+            </span>
+          </span>
+
+          <!-- Actions Menu Trigger: Mobile-->
+          <span class="tablet-lg:display-none">
+            <button
+              class="sds-button sds-button--circular margin-top-05 tablet:margin-top-0"
+            >
+              <i class="sds fa-fw fa-bars"></i>
+            </button>
+            <button
+              class="sds-button sds-button--circular margin-top-05 tablet:margin-top-0"
+            >
+              <i class="sds fa-fw fa-bars"></i>
+            </button>
+            <button
+              class="sds-button sds-button--circular margin-top-05 tablet:margin-top-0"
+            >
+              <i class="sds fa-fw fa-bars"></i>
+            </button>
+          </span>
+
+          <!-- Drawer Trigger -->
+          <button
+            class="sds-button sds-button--circular margin-top-2px tablet:margin-top-0"
+          >
+            <i class="fas fa-fw fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="main-content">
+  <div class="grid-container margin-top-3 desktop:margin-top-5 margin-bottom-9">
+    <div class="grid-row grid-gap">
+      <aside class="usa-layout-docs__sidenav desktop:grid-col-3">
+      
+      </aside>
+      <div class="sds-toolbar">
+        <div class="sds-toolbar__header">
+          <div class="sds-toolbar__toggle">
+            <a class="sds-toolbar__toogle-btn" href="">
+              <span class="usa-sr-only">Open/Close Toolbar</span>
+            </a>
+          </div>
+        </div>
+        <div class="sds-toolbar__content" hidden="hidden">
+          <div class="sds-accordion" data-allow-multiple="data-allow-multiple">
+            <div class="sds-accordion__item">
+              <h3>
+                <button aria-expanded="false" class="sds-accordion__trigger" aria-controls="accordion-nav-content" id="accordion-nav-id">
+                  <span class="sds-accordion__title">
+                    Navigation
+                    <span class="sds-accordion__icon"></span>
+                  </span>
+                </button>
+              </h3>
+              <div id="accordion-nav-content" role="region" aria-labelledby="accordion-nav-id" class="sds-accordion__panel" hidden="">
+                <div class="sds-accordion__panel-body">
+                  <nav>
+                    <ul class="usa-sidenav">
+                      <li class="usa-sidenav__item">
+                        <a href="">Parent link</a>
+                      </li>
+                      <li class="usa-sidenav__item">
+                        <a href="" class="usa-current">Current page</a>
+                        <ul class="usa-sidenav__sublist">
+                          <li class="usa-sidenav__item">
+                            <a href="">Child link</a>
+                          </li>
+                          <li class="usa-sidenav__item">
+                            <a href="">Child link</a>
+                          </li>
+                          <li class="usa-sidenav__item">
+                            <a href="">Child link</a>
+                          </li>
+                          <li class="usa-sidenav__item">
+                            <a href="">Child link</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="usa-sidenav__item">
+                        <a href="">Parent link</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="sds-accordion__item">
+              <h3>
+                <button aria-expanded="false" class="sds-accordion__trigger" aria-controls="accordion-filters-content" id="accordion-filters-id">
+                  <span class="sds-accordion__title">
+                    Filters
+                    <span class="sds-accordion__icon"></span>
+                  </span>
+                </button>
+              </h3>
+              <div id="accordion-filters-content" role="region" aria-labelledby="accordion-filters-id" class="sds-accordion__panel" hidden="">
+                <div class="sds-accordion__panel-body">
+                  <div class="sds-accordion sds-accordion--basic" data-allow-multiple="data-allow-multiple">
+                    <div class="sds-accordion__item">
+                      <h3>
+                        <button aria-expanded="false" class="sds-accordion__trigger" aria-controls="accordion-serv-class-content" id="accordion-serv-class-id">
+                          <span class="sds-accordion__title">
+                            Service Classifications
+                            <span class="sds-accordion__icon"></span>
+                          </span>
+                        </button>
+                      </h3>
+                      <div id="accordion-serv-class-content" role="region" aria-labelledby="accordion-serv-class-id" class="sds-accordion__panel" hidden="">
+                        <div class="sds-accordion__panel-body">
+                          <label class="usa-label" for="input-type-naics">NAICS</label >
+                          <input class="usa-input" id="input-type-naics" name="input-type-naics" type="text"/>
+                          <div class="selected-chips margin-top-05">
+                            <span class="sds-tag sds-tag--chip">
+                              111140 -- Wheat Farming
+                              <button class="sds-tag__close">
+                                <span class="fas fa-times" aria-hidden="true"></span>
+                              </button>
+                            </span>
+                            <span class="sds-tag sds-tag--chip">
+                              212222 -- Silver Ore Mining
+                              <button class="sds-tag__close">
+                                <span class="fas fa-times" aria-hidden="true"></span>
+                              </button>
+                            </span>
+                            <span class="sds-tag sds-tag--chip">
+                              541850 -- Outdoor Advertising
+                              <button class="sds-tag__close">
+                                <span class="fas fa-times" aria-hidden="true"></span>
+                              </button>
+                            </span>
+                          </div>
+                          <label class="usa-label" for="input-type-psc">PSC</label>
+                          <input class="usa-input" id="input-type-psc" name="input-type-psc" type="text"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sds-accordion__item">
+                      <h3>
+                        <button aria-expanded="false" class="sds-accordion__trigger" aria-controls="accordion-entity-content" id="accordion-entity-id">
+                          <span class="sds-accordion__title">
+                            Entity Name/UEI
+                            <span class="sds-accordion__icon"></span>
+                          </span>
+                        </button>
+                      </h3>
+                      <div id="accordion-entity-content" role="region" aria-labelledby="accordion-entity-id" class="sds-accordion__panel" hidden="">
+                        <div class="sds-accordion__panel-body">
+                          <label class="usa-label" for="input-type-entity">Name</label >
+                          <input class="usa-input" id="input-type-entity" name="input-type-entity" type="text"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
+        <h1>Page heading (h1)</h1>
+
+        <p class="usa-intro">
+          The page heading communicates the main focus of the page. Make your
+          page heading descriptive and keep it succinct.
+        </p>
+
+        <h2 id="section-heading-h2">Section heading (h2)</h2>
+
+        <p>
+          These headings introduce, respectively, sections and subsections
+          within your body copy. As you create these headings, follow the same
+          guidelines that you use when writing section headings: Be succinct,
+          descriptive, and precise.
+        </p>
+
+        <h3 id="section-heading-h3">Subsection heading (h3)</h3>
+
+        <p>
+          The particulars of your body copy will be determined by the topic of
+          your page. Regardless of topic, it’s a good practice to follow the
+          inverted pyramid structure when writing copy: Begin with the
+          information that’s most important to your users and then present
+          information of less importance.
+        </p>
+
+        <p>
+          Keep each section and subsection focused — a good approach is to
+          include one theme (topic) per section.
+        </p>
+
+        <h4 id="section-heading-h4">Subsection heading (h4)</h4>
+
+        <p>
+          Use the side navigation menu to help your users quickly skip to
+          different sections of your page. The menu is best suited to displaying
+          a hierarchy with one to three levels and, as we mentioned, to display
+          the sub-navigation of a given page.
+        </p>
+
+        <p>
+          Read the full documentation on our side navigation on the component
+          page.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% render '@footer--gsa' %}
