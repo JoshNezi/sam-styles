@@ -103,10 +103,19 @@
 .usa-select--inverse {
     color: white !important;
     background-color: black !important;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white'><polygon points='0,0 20,0 10,10'/></svg>") no-repeat;
+    @include add-background-svg('sam/arrow-down');
     background-size: 12px;
     background-position: calc(100% - 20px);
-    width: 150px;
+    width: 175px;
+}
+
+.usa-search--inverse > select::-ms-expand {
+  color: white !important;
+  background-color: black !important;
+  @include add-background-svg('sam/arrow-down');
+  background-size: 12px;
+  background-position: calc(90% - 20px);
+  border: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -130,11 +139,6 @@
   .sds-search--big > .usa-search.usa-search--small.usa-search--inverse{
     @include u-flex('wrap');
     @include u-padding(1);
-    width: 100%;
-  }
-
-  .sds-search--big > .usa-search.usa-search--small.usa-search--inverse > .usa-select.usa-select--inverse{
-    max-width: unset;
     width: 100%;
   }
 }
